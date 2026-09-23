@@ -31,5 +31,21 @@ Target Varriable here is Personal_Loan, with 2 classes:
 - 0: Customer does not accept the loan. (N) 
 - 1: Client accept the loan. (Y) 
 
-## 5. Questions I Need to Understand
-As the output is assessed by catergorical oucome (Y/N), it identified the given problem as a binary classification matter. Potentially relevant features include Income, Education, CCAvg, Family, Mortgage, Age, and account-related variables. Their relationships with loan acceptance will be explored during EDA.
+## 5. Initial Business Questions
+
+Before performing EDA, the following questions were identified:
+
+1. Is the target variable balanced between customers who accepted
+   and did not accept the personal loan?
+
+   
+3. Which customer characteristics may be associated with loan acceptance?
+
+4. Is annual income associated with personal loan acceptance?
+
+5. Is credit card spending associated with personal loan acceptance?
+
+6. Are there differences in loan acceptance across education levels?
+
+7. Are there any data quality issues that need to be addressed
+   before modeling?
