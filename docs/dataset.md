@@ -12,18 +12,18 @@ As a DS, the goal is to build a model that will help the marketing department to
 ## 3. Features
 - ID: Customer ID
 - Age: Customer’s age in completed years
-Experience: #years of professional experience
-Income: Annual income of the customer (in thousand dollars)
-ZIP Code: Home Address ZIP code.
-Family: the Family size of the customer
-CCAvg: Average spending on credit cards per month (in thousand dollars)
-Education: Education Level. 1: Undergrad; 2: Graduate;3: Advanced/Professional
-Mortgage: Value of house mortgage if any. (in thousand dollars)
-Personal_Loan: Did this customer accept the personal loan offered in the last campaign?
-Securities_Account: Does the customer have securities account with the bank?
-CD_Account: Does the customer have a certificate of deposit (CD) account with the bank?
-Online: Do customers use internet banking facilities?
-CreditCard: Does the customer use a credit card issued by any other Bank (excluding All life Bank)?
+- Experience: #years of professional experience
+- Income: Annual income of the customer (in thousand dollars)
+- ZIP Code: Home Address ZIP code.
+- Family: the Family size of the customer
+- CCAvg: Average spending on credit cards per month (in thousand dollars)
+- Education: Education Level. 1: Undergrad; 2: Graduate;3: Advanced/Professional
+- Mortgage: Value of house mortgage if any. (in thousand dollars)
+- Personal_Loan: Did this customer accept the personal loan offered in the last campaign?
+- Securities_Account: Does the customer have securities account with the bank?
+- CD_Account: Does the customer have a certificate of deposit (CD) account with the bank?
+- Online: Do customers use internet banking facilities?
+- CreditCard: Does the customer use a credit card issued by any other Bank (excluding All life Bank)?
 
 
 ## 4. Target Variable
