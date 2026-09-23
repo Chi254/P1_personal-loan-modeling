@@ -10,8 +10,8 @@ As a DS, the goal is to build a model that will help the marketing department to
 
 
 ## 3. Features
-ID: Customer ID
-Age: Customer’s age in completed years
+- ID: Customer ID
+- Age: Customer’s age in completed years
 Experience: #years of professional experience
 Income: Annual income of the customer (in thousand dollars)
 ZIP Code: Home Address ZIP code.
