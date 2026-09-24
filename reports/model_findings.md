@@ -1,7 +1,3 @@
-# Model and Evaluation
-
-## 1. Problem Type
-
 # Model Findings
 
 ## 1. Modeling Objective
