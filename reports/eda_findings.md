@@ -1,45 +1,87 @@
-# EDA Findings
+## 10. Key EDA Findings
 
-## 1. Data Quality
+### 1. Target Imbalance
 
-- Missing values:
-- Duplicate values:
-- Data types:
-- Outliers:
+The target variable is highly imbalanced.
 
-## 2. Target Distribution
+- Class 0: 4,520 observations
+- Class 1: 480 observations
+- Class 1 represents approximately 9.6% of the dataset.
 
-- Class 0:
-- Class 1:
-- Is the target balanced or imbalanced?
+**Implication:**  
+Accuracy alone may not be sufficient to evaluate the classification
+model. Precision, Recall, F1-score and the Confusion Matrix should also
+be considered during model evaluation.
 
-## 3. Feature Observations
+---
 
-### Income
+### 2. Data Quality
 
-- Observation:
-- Evidence:
-- Possible business meaning:
+No missing values or duplicate rows were identified in the dataset.
 
-### Education
+**Implication:**  
+No basic missing-value imputation or duplicate-row removal is required
+at this stage.
 
-- Observation:
-- Evidence:
-- Possible business meaning:
+---
 
-### Family
+### 3. Numerical Features
 
-- Observation:
-- Evidence:
-- Possible business meaning:
+The numerical feature analysis shows that `income`, `ccavg`, and
+`mortgage` have relatively wide ranges and contain potential outliers.
 
-## 4. Important Findings
+The boxplots also show differences between customers who accepted and
+did not accept a personal loan. In particular, customers who accepted
+the loan generally have higher `income` and `ccavg` values.
 
-1.
-2.
-3.
+`mortgage` also shows differences between the two groups, although both
+groups contain many observations with zero mortgage.
 
-## 5. Questions
+**Implication:**  
+These variables may contain useful information for the classification
+task and should be considered during model development. Their actual
+predictive contribution should be evaluated using the models rather
+than inferred from EDA alone.
 
-- Why is this observation important?
-- Can this observation affect model performance?
+---
+
+### 4. Experience Requires Further Investigation
+
+Negative values were identified in the `experience` variable.
+
+**Implication:**  
+These observations should be investigated before preprocessing.
+No values are automatically corrected or removed during the EDA stage.
+
+---
+
+### 5. Categorical / Discrete Features
+
+Observed personal-loan acceptance rates vary across several categorical
+variables.
+
+The differences are particularly noticeable for `education`, `family`,
+and `cd_account`, while `online` and `creditcard` show relatively small
+differences.
+
+For `cd_account`, the observed acceptance rate is substantially higher
+for customers with a CD account, although this group contains relatively
+few observations.
+
+**Implication:**  
+These variables should be considered during model development, while
+differences in subgroup size should be taken into account.
+
+---
+
+### 6. ZIP Code Requires Further Investigation
+
+`zip_code` contains a relatively large number of unique values.
+
+Rather than removing it immediately, further investigation is needed
+to determine whether the ZIP Code can be transformed into meaningful
+geographic information.
+
+**Implication:**  
+A modeling decision about `zip_code` should be made after investigating
+its potential geographic meaning.
