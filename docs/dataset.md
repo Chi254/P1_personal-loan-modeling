@@ -6,8 +6,11 @@
 As a DS, the goal is to build a model that will help the marketing department to pinpoint potential clients who have higher probability of purchasing the loan. 
 
 ## 2. Dataset Overview
-- The data set consists of 5.000 rows & 14 columns, identified by the following questions: 
-
+- The data set consists of 5.000 rows & 14 columns
+- Dataset: Bank Personal Loan Modelling
+Source: Kaggle
+Storage: Google Drive
+Note: Raw dataset is not included in this repository.
 
 ## 3. Features
 - ID: Customer ID
@@ -37,7 +40,6 @@ Before performing EDA, the following questions were identified:
 
 1. Is the target variable balanced between customers who accepted
    and did not accept the personal loan?
-
    
 3. Which customer characteristics may be associated with loan acceptance?
 
